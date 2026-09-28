@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>郭致远 · Zhiyuan Guo</title>
+<meta name="description" content="郭致远（Mike）的个人主页：摄影、写作、游泳、我的猫 Momo，还有一堆杂七杂八的爱好。">
+<meta property="og:title" content="郭致远 · Zhiyuan Guo">
+<meta property="og:description" content="拍照，游泳，写小说，家里有只猫叫 Momo。">
+<meta property="og:image" content="https://mike-zhiyuan.github.io/photos/street-lamp.jpg">
+<meta property="og:url" content="https://mike-zhiyuan.github.io/">
+<meta name="theme-color" content="#F6F3EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1014" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F6F3EC'/%3E%3Ccircle cx='32' cy='32' r='14' fill='%23C8A75A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --futura:Futura,"Futura PT","Jost","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  --sans:"IBM Plex Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --mono:"IBM Plex Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --bg:#F6F3EC; --surface:#FFFDF8; --surface-2:#EEE9DE;
+  --ink:#1C2127; --ink-2:#464E57; --ink-3:#6E767E;
+  --line:#E0D9CB; --line-strong:#C4BAA6;
+  --gold:#C8A75A; --gold-2:#E7D6A8;
+  --accent:#7A5E1E; --accent-soft:rgba(200,167,90,.20);
+  --past:#BDB6A7; --past-2:#A39C8C;
+  --plan:#6A4FA3;
+  --night:#0B0E12; --night-2:#161B22; --night-ink:#E7E3D9; --night-ink-2:#A9A69E; --night-gold:#DDBE6E; --night-line:#262D36;
+  --shadow:0 1px 2px rgba(28,33,39,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0D1014; --surface:#141920; --surface-2:#1B2129;
+    --ink:#E7E3D9; --ink-2:#B2ADA2; --ink-3:#8B8C86;
+    --line:#252C35; --line-strong:#3B4550;
+    --gold:#C9A95C; --gold-2:#6B5A30;
+    --accent:#DDBE6E; --accent-soft:rgba(221,190,110,.16);
+    --past:#3C4550; --past-2:#56606B;
+    --plan:#A993E0;
+    --night:#06080B; --night-2:#10141A; --night-line:#20262E;
+    --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0D1014; --surface:#141920; --surface-2:#1B2129;
+  --ink:#E7E3D9; --ink-2:#B2ADA2; --ink-3:#8B8C86;
+  --line:#252C35; --line-strong:#3B4550;
+  --gold:#C9A95C; --gold-2:#6B5A30;
+  --accent:#DDBE6E; --accent-soft:rgba(221,190,110,.16);
+  --past:#3C4550; --past-2:#56606B;
+  --plan:#A993E0;
+  --night:#06080B; --night-2:#10141A; --night-line:#20262E;
+  --shadow:none;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+img{max-width:100%}
+.page{max-width:1180px;margin:0 auto;padding-inline:clamp(16px,4vw,40px);padding-block:40px 64px}
+.mono{font-family:var(--mono)}
+
+/* masthead */
+.mast{display:grid;gap:14px;padding-block:8px 34px;border-bottom:1px solid var(--line)}
+.mast p{margin:0;max-width:none}
+.eyebrow{font-family:var(--futura);font-weight:500;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
+.mast h1{margin:0;font-family:var(--futura);font-weight:500;font-size:clamp(48px,9vw,92px);line-height:1;letter-spacing:.035em}
+.mast .name{font-size:clamp(17px,2.3vw,21px);color:var(--ink-2)}
+.mast .name .sep{color:var(--line-strong);padding-inline:.4em}
+.mast .hello{font-size:clamp(16px,1.9vw,18.5px);line-height:1.7;max-width:40em;color:var(--ink)}
+.route{font-family:var(--mono);font-size:14px;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+.route .past{color:var(--ink-3)}
+.route .now{color:var(--accent);font-weight:600;text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:5px}
+.route .plan{color:var(--plan);text-decoration:underline dashed;text-decoration-color:var(--plan);text-underline-offset:5px}
+.route .dash{color:var(--line-strong);padding-inline:.35em}
+.cap{font-size:12.5px;color:var(--ink-3)}
+
+/* layout */
+.layout{display:grid;grid-template-columns:150px minmax(0,1fr);gap:48px;padding-top:32px}
+.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 22px);align-self:start}
+.toc ol{list-style:none;margin:0;padding:0;display:grid;gap:1px}
+.toc a{display:grid;grid-template-columns:auto 1fr;gap:8px;align-items:baseline;padding:4px 10px;border-left:2px solid var(--line);color:var(--ink-2);text-decoration:none;font-size:14px}
+.toc a small{font-family:var(--futura);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.toc a:hover{color:var(--ink);border-left-color:var(--line-strong)}
+.toc a.on{color:var(--accent);border-left-color:var(--gold);font-weight:500}
+main{display:grid;gap:72px;min-width:0}
+section{display:grid;gap:18px;min-width:0;scroll-margin-top:calc(env(safe-area-inset-top,0px) + 70px)}
+.sec-head{display:grid;gap:4px}
+.sec-head .eyebrow{font-size:11.5px}
+h2{margin:0;font-family:var(--futura);font-weight:500;font-size:30px;line-height:1.2;letter-spacing:.01em;text-wrap:balance}
+h3{margin:0;font-family:var(--futura);font-size:16px;font-weight:500;letter-spacing:.02em}
+p{margin:0;max-width:66ch}
+.lead{font-size:16.5px;line-height:1.8}
+.note{font-size:13px;color:var(--ink-3)}
+
+/* about */
+.now-list{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--line)}
+.now-list li{display:grid;grid-template-columns:92px minmax(0,1fr);gap:4px 16px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.now-list li b{font-family:var(--futura);font-weight:500;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);padding-top:2px}
+
+figure{margin:0;display:grid;gap:8px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;overflow-x:auto;box-shadow:var(--shadow)}
+.fig svg{display:block;width:100%;min-width:600px;height:auto}
+.fig svg text{font-family:var(--sans);font-size:11.5px}
+.fig svg .tm{font-family:var(--mono);font-size:10.5px}
+figcaption{font-size:13px;color:var(--ink-2)}
+.f-past{fill:var(--past)} .f-past2{fill:var(--past-2)} .f-now{fill:var(--gold)}
+.f-plan-o{fill:none;stroke:var(--plan);stroke-width:1.2;stroke-dasharray:3 2}
+.s-tick{stroke:var(--line-strong)} .s-now{stroke:var(--accent);stroke-width:1.5}
+.t-lab{fill:var(--ink-2)} .t-mute{fill:var(--ink-3)} .t-acc{fill:var(--accent)} .t-plan{fill:var(--plan)} .b{font-weight:600}
+
+/* gallery */
+.gal{display:flex;flex-wrap:wrap;gap:8px}
+.gal figure{flex:calc(var(--ar) * 100) 1 calc(var(--ar) * 190px);gap:5px;min-width:0}
+.gal img{display:block;width:100%;height:auto;border-radius:3px;background:var(--surface-2)}
+.gal figcaption{font-size:12px;color:var(--ink-3)}
+.gal figcaption .mono{font-size:11.5px}
+.kit{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13.5px;color:var(--ink-2)}
+.kit span b{font-family:var(--mono);font-weight:500;color:var(--ink)}
+
+/* writing */
+.works{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--line)}
+.works li{display:grid;grid-template-columns:230px minmax(0,1fr);gap:4px 24px;padding:16px 0;border-bottom:1px solid var(--line)}
+.works .t{font-size:17px;font-weight:600;line-height:1.4}
+.works .m{display:block;margin-top:3px;font-family:var(--mono);font-size:12px;font-weight:400;color:var(--ink-3)}
+.works p{font-size:14.5px}
+
+/* swimming */
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:28px;align-items:start}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:460px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;font-weight:600;color:var(--ink-2);background:var(--surface-2);letter-spacing:.03em;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td.place{font-family:var(--mono);font-weight:600;white-space:nowrap;color:var(--accent)}
+.aside{border-top:2px solid var(--ink);padding-top:10px;display:grid;gap:6px}
+.aside p{font-size:14px}
+
+/* cards */
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px 18px;display:grid;gap:8px;align-content:start}
+.card p{font-size:14.5px}
+.card .m{font-family:var(--mono);font-size:12px;color:var(--ink-3)}
+
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{padding:4px 10px;border:1px solid var(--line-strong);border-radius:999px;font-size:13.5px;background:var(--surface)}
+.chips span i{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--ink-3);margin-left:6px}
+
+/* night panel: always dark, it is the night drive */
+.night{background:var(--night);color:var(--night-ink);border-radius:8px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);overflow:hidden;border:1px solid var(--night-line)}
+.night img{display:block;width:100%;height:100%;object-fit:cover;min-height:320px}
+.night .txt{padding:28px clamp(18px,3vw,36px);display:grid;gap:14px;align-content:center}
+.night .eyebrow{color:var(--night-ink-2)}
+.night h2{color:var(--night-ink)}
+.night p{font-size:15px;color:var(--night-ink);max-width:40em}
+.night .list{display:flex;flex-wrap:wrap;gap:8px}
+.night .list span{padding:3px 11px;border:1px solid var(--night-line);border-radius:999px;font-size:13.5px;color:var(--night-gold);background:var(--night-2)}
+.night .fine{font-size:13px;color:var(--night-ink-2)}
+
+/* games / books */
+.rows{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--line)}
+.rows li{display:grid;grid-template-columns:170px minmax(0,1fr);gap:4px 20px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.rows li b{font-weight:600}
+.shelf{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:0 24px;border-top:1px solid var(--line)}
+.shelf li{padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px;display:flex;justify-content:space-between;gap:12px}
+.shelf li span{color:var(--ink-3);font-size:13px;white-space:nowrap}
+
+/* daytime */
+.day{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--line)}
+.day li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:4px 20px;padding:14px 0;border-bottom:1px solid var(--line)}
+.day li .k{font-family:var(--mono);font-size:12.5px;color:var(--ink-3);padding-top:3px}
+.day li p{font-size:14.5px}
+
+footer{margin-top:72px;padding-top:18px;border-top:1px solid var(--line);display:grid;gap:6px;font-size:12.5px;color:var(--ink-3)}
+footer p{max-width:none}
+
+@media (max-width: 900px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:20px}
+  .toc{top:env(safe-area-inset-top,0px);z-index:5;margin-inline:calc(-1 * clamp(16px,4vw,40px));padding:8px clamp(16px,4vw,40px);background:var(--bg);border-bottom:1px solid var(--line)}
+  .toc ol{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+  .toc a{display:block;border-left:0;border-bottom:2px solid transparent;padding:4px 10px;white-space:nowrap;font-size:13.5px}
+  .toc a small{display:none}
+  .toc a.on{border-bottom-color:var(--gold)}
+  main{gap:56px}
+  .two{grid-template-columns:minmax(0,1fr)}
+  .night{grid-template-columns:minmax(0,1fr)}
+  .night img{max-height:420px}
+}
+@media (max-width: 560px){
+  .route{white-space:normal}
+  table{min-width:0}
+  th,td{padding:8px 8px}
+  .works li,.rows li,.day li,.now-list li{grid-template-columns:minmax(0,1fr)}
+  .gal{display:grid;grid-template-columns:1fr 1fr}
+  .gal img{aspect-ratio:1 / 1;object-fit:cover}
+}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="mast">
+  <p class="eyebrow">Zhiyuan Guo · Minneapolis</p>
+  <h1>Zhiyuan Guo</h1>
+  <p class="name">郭致远<span class="sep">/</span>Mike</p>
+  <p class="hello">在明尼阿波利斯读神经科学。拍照，游泳，写小说，家里有只猫叫 Momo。</p>
+  <p class="route" aria-label="待过的地方"><span class="past">2005 深圳</span><span class="dash">──</span><span class="past">2023 成都</span><span class="dash">──</span><span class="now">2025 明尼阿波利斯</span><span class="dash">──</span><span class="plan">以后 · 山里或海边</span></p>
+  <p class="cap">金色是现在这一段。最后一段是以后想住的地方。</p>
+</header>
+<div class="layout">
+<nav class="toc" aria-label="栏目"><ol>
+  <li><a href="#about"><span>关于</span><small>About</small></a></li>
+  <li><a href="#photo"><span>摄影</span><small>Photos</small></a></li>
+  <li><a href="#writing"><span>写作</span><small>Writing</small></a></li>
+  <li><a href="#swim"><span>游泳</span><small>Swim</small></a></li>
+  <li><a href="#momo"><span>Momo</span><small>Cat</small></a></li>
+  <li><a href="#night"><span>夜路</span><small>Night</small></a></li>
+  <li><a href="#making"><span>手作</span><small>Making</small></a></li>
+  <li><a href="#collect"><span>收藏</span><small>Collect</small></a></li>
+  <li><a href="#games"><span>游戏</span><small>Games</small></a></li>
+  <li><a href="#books"><span>书架</span><small>Books</small></a></li>
+  <li><a href="#ai"><span>折腾 AI</span><small>Tinker</small></a></li>
+  <li><a href="#day"><span>白天</span><small>Study</small></a></li>
+</ol></nav>
+<main>
+
+<section aria-labelledby="about">
+  <div class="sec-head"><p class="eyebrow">About</p><h2 id="about">关于</h2></div>
+  <p class="lead">深圳长大，在成都读了两年生物工程，2025 年秋天转到明尼苏达大学读神经科学，今年大四。课和简历以外的事都放在这里：拍的照片、写的小说、从小游的泳、我的猫，还有一堆杂七杂八的爱好。</p>
+  <figure><div class="fig" id="lifebar"><svg viewBox="0 0 960 72" role="img" aria-labelledby="lb-t"><title id="lb-t">按真实时长画的时间轴：深圳 2005 到 2023，成都 2023 到 2025，明尼阿波利斯 2025 到 2027，以后想去山里或海边</title><text x="370.9" y="20" text-anchor="middle" class="t-lab">深圳 · 2005–2023</text><text x="728.7" y="20" text-anchor="middle" class="t-lab">成都</text><text x="797.5" y="20" text-anchor="middle" class="t-acc b">明尼阿波利斯</text><rect x="44.6" y="28" width="652.6" height="14" rx="2" class="f-past"/><rect x="697.2" y="28" width="63.0" height="14" class="f-past2"/><rect x="767.6" y="28" width="59.8" height="14" class="f-now"/><rect x="835.5" y="28.6" width="84.5" height="12.8" class="f-plan-o"/><line x1="805.2" x2="805.2" y1="24" y2="48" class="s-now"/><line x1="40.0" x2="40.0" y1="44" y2="49" class="s-tick"/><text x="40.0" y="62" text-anchor="middle" class="t-mute tm">2005</text><line x1="216.0" x2="216.0" y1="44" y2="49" class="s-tick"/><text x="216.0" y="62" text-anchor="middle" class="t-mute tm">2010</text><line x1="392.0" x2="392.0" y1="44" y2="49" class="s-tick"/><text x="392.0" y="62" text-anchor="middle" class="t-mute tm">2015</text><line x1="568.0" x2="568.0" y1="44" y2="49" class="s-tick"/><text x="568.0" y="62" text-anchor="middle" class="t-mute tm">2020</text><text x="805.2" y="62" text-anchor="middle" class="t-acc tm">现在</text><text x="877.8" y="62" text-anchor="middle" class="t-plan">山里或海边？</text></svg></div><figcaption>按真实时长画的。在深圳待了十八年，后面三年换了两座城。</figcaption></figure>
+  <h3>最近</h3>
+  <ul class="now-list"><li><b>实验室</b><span>在 Clay Carter 实验室学怎么研究花蜜。</span></li><li><b>课</b><span>给一个没人研究过的人类基因 LACTBL1 建了个<a href="https://mike-zhiyuan.github.io/lactbl1/">资料站</a>。</span></li><li><b>早上</b><span>手磨一杯咖啡，先学一会儿再干别的。</span></li><li><b>晚上</b><span>想晚上去学校的泳池游泳，泳池在 Rec Well。</span></li><li><b>手上</b><span>一串凤眼菩提盘出了色差，在琢磨怎么追色。</span></li></ul>
+</section>
+
+<section aria-labelledby="photo">
+  <div class="sec-head"><p class="eyebrow">Photography</p><h2 id="photo">摄影</h2></div>
+  <p class="lead">都是 Leica C（Typ 112）拍的，2025 年秋天到 2026 年 3 月，大多在明尼阿波利斯。有几张右下角带着机身打的橙色日期。</p>
+  <div class="gal">
+<figure style="--ar:0.7500"><img src="photos/downtown-rail.jpg" width="1050" height="1400" alt="市中心的轻轨道，下过雪" decoding="async"><figcaption>市中心的轻轨道，下过雪 · <span class="mono">2026-01-03</span></figcaption></figure>
+<figure style="--ar:1.3333"><img src="photos/prospect-park.jpg" width="1400" height="1050" alt="Prospect Park 站" decoding="async"><figcaption>Prospect Park 站</figcaption></figure>
+<figure style="--ar:0.7500"><img src="photos/city-hall.jpg" width="1050" height="1400" alt="明尼阿波利斯市政厅的钟楼" decoding="async"><figcaption>明尼阿波利斯市政厅的钟楼 · <span class="mono">2026-01-03</span></figcaption></figure>
+<figure style="--ar:1.3333"><img src="photos/station-snow.jpg" width="1400" height="1050" alt="雪天的轻轨站" decoding="async"><figcaption>雪天的轻轨站 · <span class="mono">2026-02-18</span></figcaption></figure>
+<figure style="--ar:0.7500"><img src="photos/park-av.jpg" width="1050" height="1400" alt="Park Av" decoding="async"><figcaption>Park Av · <span class="mono">2026-01-03</span></figcaption></figure>
+<figure style="--ar:0.7500"><img src="photos/windows.jpg" width="1050" height="1400" alt="傍晚的写字楼" decoding="async"><figcaption>傍晚的写字楼 · <span class="mono">2026-03-07</span></figcaption></figure>
+<figure style="--ar:1.3333"><img src="photos/street-lamp.jpg" width="1400" height="1050" alt="街灯亮了" decoding="async"><figcaption>街灯亮了 · <span class="mono">2026-03-07</span></figcaption></figure>
+<figure style="--ar:0.7500"><img src="photos/harbor.jpg" width="1050" height="1400" alt="清早，船上看港口" decoding="async"><figcaption>清早，船上看港口 · <span class="mono">2026-03-10</span></figcaption></figure>
+  </div>
+  <p class="kit"><span>相机 <b>Leica C (Typ 112)</b></span><span><b>Leica D-Lux 8</b></span><span><b>Fujifilm X Half</b></span></p>
+</section>
+
+<section aria-labelledby="writing">
+  <div class="sec-head"><p class="eyebrow">Writing</p><h2 id="writing">写作</h2></div>
+  <p class="lead">写中文小说。奇幻那几部笔调偏冷；《晚自习》换了一种写法，走青春校园的路子。常出现的两个名字是沈玦和谢霜。</p>
+  <ul class="works"><li><div class="t">《无上的背叛》<span class="m">也叫《穹华》· 长篇奇幻 · 完成稿 168 页，在重写</span></div><p>写穹华都的事，两条时间线，主角是安布罗斯和韦瑟。笔调冷，靠场面说话，不替读者解释。它最早是从一篇艾尔登法环同人《安布罗斯与白蔷薇》里长出来的。</p></li><li><div class="t">《晚自习》<span class="m">青春校园 · 第一部七章，约 1.8 万字</span></div><p>深圳南山。一个成绩一般、常年游泳的高一男生，意外造出了一个有意识的 AI，这件事他谁也不能说。</p></li><li><div class="t">《不折》<span class="m">一把剑的传记 · 约 5.7 万字</span></div><p>从战象、持金刚刃的修女、火枪和巨人，一路打到黑白两条龙的骑士决斗。剑一直没折。</p></li><li><div class="t">《格格不入》<span class="m">穿越 · 写到第三章</span></div><p>深圳的带货主播穿进王府当了格格。她不肯束肩，靠算账站住了脚，第三章被召进了京。</p></li><li><div class="t">《阿尔瑟瑞恩》<span class="m">设定</span></div><p>镜湖城和白昼塔，宫廷加军旅，主角叫铃。</p></li></ul>
+</section>
+
+<section aria-labelledby="swim">
+  <div class="sec-head"><p class="eyebrow">Swimming</p><h2 id="swim">游泳</h2></div>
+  <div class="two">
+    <div style="display:grid;gap:18px">
+      <p class="lead">从小练游泳。2018 年游进国家二级，高中靠游泳特长进了深圳育才中学。到了大学还在比，2024 年拿过四川省大学生比赛的 100 米自由泳第一。</p>
+      <p>现在想晚上去学校的泳池游。</p>
+      <div class="aside"><h3>小时候练出来的另一样</h3><p>钢琴。2017 年考到中国音乐家协会十级，业余考级的最高一级。</p></div>
+    </div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>年份</th><th>比赛</th><th>项目</th><th>名次</th></tr></thead>
+      <tbody><tr><td class="num">2024</td><td>四川省大学生游泳比赛 · 男子 C 组</td><td>100 米自由泳</td><td class="place">第 1</td></tr><tr><td class="num">2024</td><td>四川省大学生游泳比赛 · 男子 C 组</td><td>50 米自由泳</td><td class="place">第 2</td></tr><tr><td class="num">2024</td><td>四川省大学生游泳比赛</td><td>优秀运动员</td><td class="place">—</td></tr><tr><td class="num">2024</td><td>短池游泳大师赛 · 18–24 岁组</td><td>25 米蝶泳</td><td class="place">第 2</td></tr><tr><td class="num">2024</td><td>短池游泳大师赛 · 18–24 岁组</td><td>50 米自由泳</td><td class="place">第 3</td></tr><tr><td class="num">2024</td><td>短池游泳大师赛</td><td>8×50 米自由泳混合接力</td><td class="place">第 3</td></tr><tr><td class="num">2018</td><td>国家二级运动员</td><td>100 米自由泳进 1:05</td><td class="place">达标</td></tr></tbody>
+    </table></div>
+  </div>
+</section>
+
+<section aria-labelledby="momo">
+  <div class="sec-head"><p class="eyebrow">The cat</p><h2 id="momo">Momo</h2></div>
+  <div class="gal">
+<figure style="--ar:1.3333"><img src="photos/momo.jpg" width="1400" height="1050" alt="Momo" decoding="async"><figcaption>Momo · <span class="mono">2025-11-22</span></figcaption></figure>
+<figure style="--ar:1.3333"><img src="photos/momo-side.jpg" width="1400" height="1050" alt="Momo 的侧脸" decoding="async"><figcaption>Momo 的侧脸 · <span class="mono">2025-11-22</span></figcaption></figure>
+<figure style="--ar:1.3333"><img src="photos/cat-grass.jpg" width="1400" height="1050" alt="窗边的猫草" decoding="async"><figcaption>窗边的猫草 · <span class="mono">2025-11-22</span></figcaption></figure>
+  </div>
+  <p class="lead">Momo 是我的猫。它不吃生肉，丢给它的生肉会被叼出碗，放在旁边地上。</p>
+</section>
+
+<section class="night" aria-labelledby="night">
+  <img src="photos/night-lamps.jpg" width="1050" height="1400" alt="黑夜里亮着的一组球形路灯" decoding="async">
+  <div class="txt">
+    <p class="eyebrow">Night drive</p>
+    <h2 id="night">夜路</h2>
+    <p>我迷一整套清冷、可控的感觉。想象自己是个把凡事都处理好了的司机，开得很自在。</p>
+    <div class="list"><span>白色魔爪</span><span>改装车（其实一窍不通）</span><span>舒肤佳白的味道</span><span>深夜的高速</span><span>雨</span><span>slow + reverb</span></div>
+    <p class="fine">平时开一台 2021 年的 Subaru Crosstrek，看过一台 1999 年的丰田皇冠 JZS155。这个站的颜色也是这么来的：淡金配奶白，深色模式照着深夜高速配。这张灯拍于 2026-03-07。</p>
+  </div>
+</section>
+
+<section aria-labelledby="making">
+  <div class="sec-head"><p class="eyebrow">Making</p><h2 id="making">手作</h2></div>
+  <div class="cols">
+    <div class="card"><h3>皮具</h3><p>自己动手做皮具。</p></div>
+    <div class="card"><h3>战损改造</h3><p>一把 8.99 美元的 HERSAUL 西洋剑拆信刀，我想让它看起来打过很多仗：拿 Temu 买的那把日式短刀往一侧刃上敲缺口，只让它用一边，剑脊到最后被敲弯了。那把短刀之前照着 Gael 的样子做过旧。</p></div>
+    <div class="card"><h3>两只钢铁侠</h3><p>两个可动手办做了战损。一只全靠刀刻，伤都在躯干；另一只整个用火烧，表面蚀掉一层。最后拿那把短刀摆了一个从胸口捅穿的造型。</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="collect">
+  <div class="sec-head"><p class="eyebrow">Collecting</p><h2 id="collect">收藏</h2></div>
+  <div class="cols">
+    <div class="card"><h3>自然史标本</h3><p>猛犸象牙、独角鲸牙。</p></div>
+    <div class="card"><h3>EDC 折刀</h3><p>手上有一把 CIVIVI。喜欢简单的样式，不要战术风；柄最好是木头的，比如非洲花梨、黑檀，拿在手里像盘文玩一样盘出包浆。</p></div>
+  </div>
+  <h3>在盘的文玩</h3>
+  <div class="chips"><span>凤眼菩提<i>11.5 圆珠 · 13 藏切</i></span><span>热振柏香籽</span><span>金刚菩提<i>便宜，效果不错</i></span><span>秦剑 野生核桃串</span><span>凤凰台 手捻核桃</span><span>猛犸象牙单圈<i>10×9</i></span><span>星月菩提<i>圆珠卡 10 · 老形卡 8</i></span></div>
+  <p class="note">凤眼菩提最近盘出了色差，还在想办法追色。</p>
+</section>
+
+<section aria-labelledby="games">
+  <div class="sec-head"><p class="eyebrow">Games</p><h2 id="games">游戏与战锤</h2></div>
+  <ul class="rows"><li><b>战锤 40K</b><span>书架上还有《荷鲁斯之乱》。</span></li><li><b>艾尔登法环</b><span>写过武器背景考据、黄金树幽影的分析和半神的人物档案，中文译名都对过一遍。《黑夜君临》主玩执行者，在配一套更扛打的遗物。</span></li><li><b>致命躯壳 2</b><span>从髓骨堡出来，远远看见一座很漂亮的城堡，以为是王城，跑过去才发现没想象中宏伟，有点失望。</span></li><li><b>想玩的</b><span>在考虑入《黑暗之魂 3》；想知道《黄昏血族》能不能在电脑上玩。</span></li><li><b>不太玩了</b><span>使命召唤战区，觉得现在没以前好玩。</span></li></ul>
+</section>
+
+<section aria-labelledby="books">
+  <div class="sec-head"><p class="eyebrow">Books</p><h2 id="books">书架</h2></div>
+  <p>电子书架上现在放着这些。</p>
+  <ul class="shelf"><li>《破碎的星球》三部曲<span>N.K. 杰米辛</span></li><li>《致命引擎》四部曲<span>菲利普·瑞弗</span></li><li>《战锤·荷鲁斯之乱》<span></span></li><li>《艾尔登法环官方设定集》I、II<span></span></li><li>《静静的顿河》<span>肖洛霍夫</span></li><li>《局外人》<span>加缪</span></li><li>《追风筝的人》<span>胡赛尼</span></li><li>《繁花》<span>金宇澄</span></li><li>《留德十年》<span>季羡林</span></li><li>《牛棚杂忆》<span>季羡林</span></li><li>《人类简史》<span>赫拉利</span></li><li>《乌合之众》<span>勒庞</span></li></ul>
+</section>
+
+<section aria-labelledby="ai">
+  <div class="sec-head"><p class="eyebrow">Tinkering</p><h2 id="ai">折腾 AI</h2></div>
+  <div class="cols">
+    <div class="card"><h3>「澄」</h3><p class="m">TypeScript · Electron · OpenAI API</p><p>想做一个有人格、会自己想事情的桌面 AI。身份内核、内心世界、内心独白、长期记忆、主动找人聊天都写了，能打包成 Mac 应用。5 月底卡在启动，窗口一直停在「正在连接人格引擎」。文件夹我起名叫「我最伟大的成就和失败」。</p></div>
+    <div class="card"><h3>骑士对决</h3><p class="m">一套给 AI 的规则</p><p>AI 一人两角：裁判，和十五世纪的骑士罗兰·冯·埃森巴赫。对手是一个能召唤任何能力的人。伤害按真实物理算，罗兰按真人的速度变强，每场打完用他自己的口气写复盘。</p></div>
+    <div class="card"><h3>别的</h3><p>拿旧电脑跑本地模型，琢磨多智能体怎么搭；用 Midjourney 给小说画氛围图。</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="day">
+  <div class="sec-head"><p class="eyebrow">Daytime</p><h2 id="day">白天在做的事</h2></div>
+  <p class="lead">白天是神经科学本科生。一直好奇的是意识、具身认知，还有电压成像。以后想往计算生物信息那边走。</p>
+  <ul class="day"><li><span class="k">Carter 实验室</span><div><p>CBS 院长本科科研项目。实验室研究花蜜是怎么做出来的。有种叫 Melianthus 的花，花蜜是黑的：没食子酸变成鞣花酸，再跟铁结合，和中世纪的铁胆墨水是一个道理。我想往计算那边靠。</p><p class="note"><a href="https://cbs.umn.edu/blog-posts/dark-side-colored-nectars">黑色花蜜的报道</a></p></div></li><li><span class="k">GCD 3485</span><div><p>一学期只研究一个没人研究过的人类基因。我挑的是 LACTBL1，579 个氨基酸，在视网膜里表达最多。</p><p class="note"><a href="https://mike-zhiyuan.github.io/lactbl1/">LACTBL1 资料站</a></p></div></li><li><span class="k">斑马鱼和微塑料</span><div><p>2026 年春天的课程项目。斑马鱼幼体泡在聚苯乙烯微球里七天，存活率和心率都没变，乳酸先升上去了。论文是我自己写的。</p></div></li><li><span class="k">这学期的论文</span><div><p>写视觉经验怎么塑造小鼠视网膜节细胞：眼睛看到的东西，会不会改变这些细胞的基因表达和成熟。</p></div></li></ul>
+</section>
+
+</main>
+</div>
+
+<footer>
+  <p>照片都出自我的 Leica C，想转用请先问我。页面 2026 年 9 月搭起来，整理时用了 Claude 协助。</p>
+  <p><a href="https://github.com/mike-zhiyuan">github.com/mike-zhiyuan</a></p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var lb = document.getElementById('lifebar');
+  if (lb && lb.scrollWidth > lb.clientWidth) { lb.scrollLeft = lb.scrollWidth; }
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  if (!('IntersectionObserver' in window)) return;
+  var byId = {};
+  links.forEach(function(a){ byId[a.getAttribute('href').slice(1)] = a; });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('on'); });
+        var h = en.target.querySelector('h2');
+        var a = h && byId[h.id]; if (a) a.classList.add('on');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  Array.prototype.forEach.call(document.querySelectorAll('main section'), function(s){ io.observe(s); });
+})();
+</script>
+
+</body>
+</html>
